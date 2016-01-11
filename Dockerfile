@@ -9,4 +9,6 @@ RUN rm /etc/nginx/conf.d/default.conf \
 ADD nginx.conf /etc/nginx/conf.d/app.conf
 ADD nginx-spa-proxy.sh /
 
+EXPOSE 80
+
 CMD ["/bin/bash", "/nginx-spa-proxy.sh"]
