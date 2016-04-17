@@ -1,10 +1,10 @@
-# Nginx Single Page App proxy docker
-Nginx hosting a Single Page App with a backend API #ember-cli #Ember.js #AngularJS
+# Ember proxy service
+Nginx hosting an Ember app with a backend API #ember-cli #Ember.js
 
-## Running your Single Page App
+## Running your Ember app
     docker run --name my-app \
         --link my-backend-container:backend \
         -v /path/to/spa/dist:/app:ro \
-        -d semtech/mu-nginx-spa-proxy
+        -d semtech/ember-proxy-service
 
-All HTML requests and requests to a location matching `$STATIC_FOLDERS_REGEX` (default: `^/(assets|font)/`) are served by the Single Page App. Remaining requests are proxied to the backend API.
+All HTML requests and requests to a location matching `$STATIC_FOLDERS_REGEX` (default: `^/(assets|font)/`) are served by the Ember app. Remaining requests are proxied to the backend API.
