@@ -8,6 +8,6 @@ Nginx hosting an Ember app with a backend API #ember-cli #Ember.js
         -v /path/to/config:/conf \
         -d semtech/ember-proxy-service
 
-All HTML requests and requests to a location matching `$STATIC_FOLDERS_REGEX` (default: `^/(assets|font)/`) are served by the Ember app. Remaining requests are proxied to the backend API.
+All HTML requests and requests to a location matching the regex in the `STATIC_FOLDERS_REGEX` environment variable (default: `^/(assets|font)/`) are served by the Ember app. Remaining requests are proxied to the backend API.
 
 Custom Nginx configurations with a name like `*.conf` can be mounted in `/config` and will be included automatically.
