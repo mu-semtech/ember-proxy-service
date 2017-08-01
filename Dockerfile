@@ -1,4 +1,4 @@
-FROM nginx:1
+FROM nginx:1.13
 
 MAINTAINER Erika Pauwels <erika.pauwels@gmail.com>
 
