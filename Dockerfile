@@ -1,6 +1,6 @@
 FROM nginx:1.15.3
 
-MAINTAINER Erika Pauwels <erika.pauwels@gmail.com>
+LABEL maintainer="erika.pauwels@gmail.com"
 
 ENV STATIC_FOLDERS_REGEX "^/(assets|font)/"
 
