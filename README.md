@@ -1,6 +1,8 @@
 # Ember proxy service
 Nginx hosting an Ember app with a backend API #ember-cli #Ember.js
 
+**!!! This service is DEPRECATED. Please use [static-file-service](https://github.com/mu-semtech/static-file-service) or [fastboot-app-server](https://github.com/redpencilio/fastboot-app-server-service) to host your Ember app**
+
 ## Running your Ember app
     docker run --name my-app \
         --link my-backend-container:backend \
